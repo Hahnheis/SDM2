@@ -1,0 +1,39 @@
+---
+title: "SDM_Assignment:1"
+author: "Noah Hahnheiser"
+date: '2022-04-25'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+## Assignment 1
+
+### v1
+```{r}
+a <- 2
+b <- 5
+Results <- c(sum(a,b), (b-a), prod(a,b), (a/b), (a**b))
+
+print(Results)
+```
+
+### v2
+```{r}
+Operation <- c( "sum", "difference", "produce", "ratio", "a**b")
+
+print(Operation)
+```
+
+### df
+```{r}
+df <- data.frame(Results, Operation)
+print(df)
+```
+
+```{r}
+df [3,1]
+```
